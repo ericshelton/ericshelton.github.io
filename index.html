@@ -1,52 +1,46 @@
-<!doctype html>
-<html>
-  <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+---
+title: Eric Shelton Design
+---
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Eric Shelton Design</title>
-
-    <link href="/stylesheets/style.css" rel="stylesheet" />
-    <script src="/javascripts/all.js"></script>
-  </head>
-
-  <body class="l-body">
-    <nav class="m-nav">
-      <div class="m-nav--container">
-        <div class="m-nav--container_scroll">
-          <div class="m-nav--container_overflow">
-            <a href="/photography.html">Photography</a>
-            <a href="/about.html">About</a>
-          </div>
-        </div>
-        <div class="m-nav--overlay"></div>
-      </div>
-      <a class="m-nav--home" href="/">Eric Shelton</a>
-    </nav>
-    <div class="m-header--lead">
+<div class="m-header--lead">
   <p>Eric Shelton is a designer and photographer based in NY who strives for simplicity and clarity.</p>
-  <p><a href="http://www.gensler.com">Brand designer at Gensler</a><br />
-     <a href="mailto:ericsheltonis@gmail.com">Say hello</a></p>
+  <p>Looking for opportunities.<br />
+     <%= link_to 'Say hello', 'mailto:ericsheltonis@gmail.com' %></p>
 </div>
 
-<div class="m-projects">
-  <a href="/apex.html"><div class="m-projects--image"></div></a>
-  <a href="/wait.html"><div class="m-projects--image"></div></a>
-  <a href="/camd.html"><div class="m-projects--image"></div></a>
-  <a href="/mgm.html"><div class="m-projects--image"></div></a>
-  <a href="/cornell.html"><div class="m-projects--image"></div></a>
-  <a href="/graphis.html"><div class="m-projects--image"></div></a>
-  <a href="/health.html"><div class="m-projects--image"></div></a>
-  <a href="/bone-machine.html"><div class="m-projects--image"></div></a>
-  <!--  <a href="/bone-machine.html"><div class="m-projects--image"></div></a> -->
-  <!-- <a href="/eyesite.html"><div class="m-projects--image"></div></a> -->
+</br>
 
-</div>
+<p>
+  <%= link_to 'Resume', '../resume.pdf' %>
+  <%= link_to 'Portfolio', '../portfolio.pdf' %>
+  </p>
 
+ <%# <%= partial "partials/_projects" %> %>
+
+<!-- <script>
+  function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1)
+      history.go(-1);
+    if (pass1.toLowerCase() == "eric2020") {
+      window.open('protectpage.html');
+      break;
+    }
+  testV+=1;
+  var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+  }
+  if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+  }
+</script> -->
+
+<center>
+  <form>
+    <input type="button" value="Enter Protected Area" onClick="passWord()">
+  </form>
+</center>
 
 <p>This site is under construction. Email for details. </P.
-
-  </body>
-</html>
